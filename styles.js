@@ -1,23 +1,22 @@
-import { createGlobalStyle } from "styled-components";
-
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-: root {
-    --color-primary: #333333;
+  /* Your global styles here */
+  :root {
+    --color-primary: #33333;
     --color-header: green;
     --color-footer: pink;
-}
+  }
 
-* {
+  * {
     box-sizing: border-box;
-}
+  }
 
-body {
+  body {
     margin: 0;
     font-family: system-ui;
     background-color: var(--color-primary);
-}
-
+  }
 `;
 
 export default GlobalStyle;

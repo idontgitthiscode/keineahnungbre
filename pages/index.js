@@ -9,10 +9,11 @@ const StyledH1 = styled.h1`
 export default function Home() {
   return (
     <>
-      <StyledH1>Willkommen bei keineahnungbre</StyledH1>
+      <StyledH1>Willkommen bei keineAhnungBre</StyledH1>
       <div>
         <ContentList />
       </div>
     </>
   );
 }
+
