@@ -1,32 +1,41 @@
+//Import 
 import Image from "next/image";
 import data from "../../lib/data.js";
 import styled from "styled-components";
 
-
+//Styled-Components
 const StyledContentlist = styled.ul`
 list-style-type: none;
-border: 2px solid lightgrey; 
+padding: 0px;
 `;
 
 const StyledH1 = styled.h1`
-  color: #BF4F74;
+  color: black;
 `;
 
 const StyledDIV = styled.div`
   text-align: center;
 `;
 
+const StyledContentBox = styled.li`
+border: 2px solid lightgrey; 
+padding: 25px;
+margin-bottom: 35px;
+margin-left: 25px;
+margin-right: 25px;
+`;
 
+//Export function
 export default function Contentlist() {
   return (
     <StyledDIV>
       <StyledH1>Contentliste</StyledH1>
       <StyledContentlist>
         {data.map((item) => (
-          <li key={item.id}>
+          <StyledContentBox key={item.id}>
             <h2>{item.title}</h2>
             <p>{item.previewtext}</p>
-          </li>
+          </StyledContentBox>
         ))}
       </StyledContentlist>
     </StyledDIV>
