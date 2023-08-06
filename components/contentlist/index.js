@@ -22,7 +22,7 @@ const StyledDIV = styled.div`
 
 const StyledContentBox = styled.li`
 background: linear-gradient(#868F96 , #596164);
-border: 2px solid lightgrey; 
+border: 4px solid white; 
 padding: 50px 25px;
 margin-bottom: 35px;
 margin-left: 25px;
