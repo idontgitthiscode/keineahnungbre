@@ -2,6 +2,7 @@
 import Image from "next/image";
 import data from "../../lib/data.js";
 import styled from "styled-components";
+import ContentImage from "next/image";
 
 //Styled-Components
 const StyledContentlist = styled.ul`
@@ -38,6 +39,7 @@ export default function Contentlist() {
         {data.map((item) => (
           <StyledContentBox key={item.id}>
             <h2>{item.title}</h2>
+            <ContentImage src={item.image} alt={item.name} width={375} height={375} />
             <p>{item.previewtext}</p>
           </StyledContentBox>
         ))}
