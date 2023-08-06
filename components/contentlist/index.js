@@ -3,12 +3,17 @@ import data from "../../lib/data.js";
 import styled from "styled-components";
 
 const StyledH1 = styled.h1`
+  color: #BF4F74;
+`;
+
+const StyledDIV = styled.div`
   text-align: center;
 `;
 
+
 export default function Contentlist() {
   return (
-    <div>
+    <StyledDIV>
       <StyledH1>Contentliste</StyledH1>
       <ul>
         {data.map((item) => (
@@ -18,6 +23,6 @@ export default function Contentlist() {
           </li>
         ))}
       </ul>
-    </div>
+    </StyledDIV>
   );
 }
