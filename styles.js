@@ -3,12 +3,12 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 : root {
-    --color-primary: yellow;
+    --color-primary: #333333;
     --color-header: green;
     --color-footer: pink;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
