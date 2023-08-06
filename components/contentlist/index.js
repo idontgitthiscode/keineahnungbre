@@ -15,14 +15,14 @@ const StyledH1 = styled.h1`
 
 const StyledDIV = styled.div`
   text-align: center;
-  max-width: 1200px;
+  max-width: 800px;
   margin: auto;
 `;
 
 const StyledContentBox = styled.li`
 background: linear-gradient(#868F96 , #596164);
 border: 2px solid lightgrey; 
-padding: 25px;
+padding: 50px 25px;
 margin-bottom: 35px;
 margin-left: 25px;
 margin-right: 25px;
