@@ -2,12 +2,11 @@
 import Image from "next/image";
 import data from "../../lib/data.js";
 import styled from "styled-components";
-import ContentImage from "next/image";
 
 //Styled-Components
 const StyledContentlist = styled.ul`
-list-style-type: none;
-padding: 0px;
+  list-style-type: none;
+  padding: 0px;
 `;
 
 const StyledH1 = styled.h1`
@@ -21,13 +20,17 @@ const StyledDIV = styled.div`
 `;
 
 const StyledContentBox = styled.li`
-background: linear-gradient(#868F96 , #596164);
-border: 4px solid white; 
-padding: 50px 25px;
-margin-bottom: 35px;
-margin-left: 25px;
-margin-right: 25px;
-border-radius: 10px;
+  background: linear-gradient(#868F96 , #596164);
+  border: 4px solid white; 
+  padding: 50px 25px;
+  margin-bottom: 35px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 10px;
+`;
+
+const ContentImage = styled(Image)` 
+  border-radius: 10px;
 `;
 
 //Export function
