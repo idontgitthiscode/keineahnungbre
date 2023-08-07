@@ -38,7 +38,7 @@ const StyledContentBox = styled.li`
     background: ${hoverGradient};
   }
 
-  /* Add media query for smaller screen sizes (e.g., mobile devices) */
+  /* Ad media query for smaller screen sizes (e.g., mobile devices) */
   @media (max-width: 768px) {
     margin: 15px; /* Adjust the margin for mobile view */
     min-width: auto; /* Allow the content boxes to take the full width in mobile view */
@@ -51,7 +51,7 @@ const ContentImage = styled(Image)`
   max-height: 350px;
   border: 2px solid white;
 `;
-
+ 
 export default function Contentlist() {
   return (
     <StyledDIV>
