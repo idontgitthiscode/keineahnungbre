@@ -31,7 +31,9 @@ const StyledContentBox = styled.li`
 
 const ContentImage = styled(Image)` 
   border-radius: 10px;
-`;
+  max-width: 100%;
+  height:auto;
+  `;
 
 //Export function
 export default function Contentlist() {
@@ -42,7 +44,7 @@ export default function Contentlist() {
         {data.map((item) => (
           <StyledContentBox key={item.id}>
             <h2>{item.title}</h2>
-            <ContentImage src={item.image} alt={item.name} width={375} height={375} />
+            <ContentImage src={item.image} alt={item.name} width={700} height={350} />
             <p>{item.previewtext}</p>
           </StyledContentBox>
         ))}
