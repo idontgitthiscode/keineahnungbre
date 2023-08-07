@@ -9,8 +9,8 @@ const StyledContentlist = styled.ul`
   padding: 0px;
 `;
 
-const StyledH1 = styled.h1`
-  color: black;
+const StyledH2 = styled.h2`
+  color: white;
 `;
 
 const StyledDIV = styled.div`
@@ -37,7 +37,7 @@ const ContentImage = styled(Image)`
 export default function Contentlist() {
   return (
     <StyledDIV>
-      <StyledH1>Contentliste</StyledH1>
+      <StyledH2>Finde die Web-Development Komponenten, die du brauchst!</StyledH2>
       <StyledContentlist>
         {data.map((item) => (
           <StyledContentBox key={item.id}>
