@@ -3,9 +3,9 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   /* Your global styles here */
   :root {
-    --color-primary: black;
-    --color-header: green;
-    --color-footer: pink;
+    --color-primary: #272829;
+    --color-header: #61677A;
+    --color-footer: #FFF6E0;
   }
 
   * {
