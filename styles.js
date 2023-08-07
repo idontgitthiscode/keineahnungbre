@@ -12,11 +12,20 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  @font-face {
+    font-family: 'Inconsolata';
+    src: url('/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+    /* Add other font formats here if necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+
   body {
     margin: 0;
-    font-family: system-ui;
+    font-family: 'Inconsolata', system-ui; /* Use 'Inconsolata' as the custom font and fallback to system-ui */
     background-color: var(--color-primary);
   }
 `;
 
 export default GlobalStyle;
+

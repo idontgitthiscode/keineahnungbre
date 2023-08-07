@@ -1,12 +1,13 @@
-//Import 
 import Image from "next/image";
 import data from "../../lib/data.js";
 import styled from "styled-components";
 
-//Styled-Components
 const StyledContentlist = styled.ul`
   list-style-type: none;
-  padding: 0px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const StyledH2 = styled.h2`
@@ -16,32 +17,41 @@ const StyledH2 = styled.h2`
 
 const StyledDIV = styled.div`
   text-align: center;
-  max-width: 800px;
+  max-width: 1200px;
   margin: auto;
 `;
 
+const defaultGradient = "linear-gradient(#D8D9DA, #61677A)";
+const hoverGradient = "linear-gradient(#61677A, #D8D9DA)";
+
 const StyledContentBox = styled.li`
-  background: linear-gradient(#D8D9DA, #61677A);
-  border: 4px solid white; 
+  background: ${defaultGradient};
+  border: 4px solid white;
   padding: 50px 25px;
-  margin-bottom: 35px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin: 20px;
   border-radius: 10px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  flex: 1 0 300px;
+  min-width: 500px;
+  &:hover {
+    transform: scale(1.02);
+    background: ${hoverGradient};
+  }
+
+  /* Add media query for smaller screen sizes (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    margin: 15px; /* Adjust the margin for mobile view */
+    min-width: auto; /* Allow the content boxes to take the full width in mobile view */
+  }
 `;
 
-const ContentImage = styled(Image)` 
+const ContentImage = styled(Image)`
   border-radius: 10px;
   max-width: 100%;
-  height:auto;
-  filter: grayscale(70%);
+  max-height: 350px;
   border: 2px solid white;
-  &:hover {
-    filter: grayscale(0%);
-  }
-  `;
+`;
 
-//Export function
 export default function Contentlist() {
   return (
     <StyledDIV>
