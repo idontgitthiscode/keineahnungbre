@@ -11,6 +11,7 @@ const StyledContentlist = styled.ul`
 
 const StyledH2 = styled.h2`
   color: white;
+  padding-bottom: 30px;
 `;
 
 const StyledDIV = styled.div`
@@ -34,6 +35,7 @@ const ContentImage = styled(Image)`
   max-width: 100%;
   height:auto;
   filter: grayscale(70%);
+  border: 2px solid white;
   &:hover {
     filter: grayscale(0%);
   }
