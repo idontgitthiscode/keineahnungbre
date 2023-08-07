@@ -33,6 +33,10 @@ const ContentImage = styled(Image)`
   border-radius: 10px;
   max-width: 100%;
   height:auto;
+  filter: grayscale(70%);
+  &:hover {
+    filter: grayscale(0%);
+  }
   `;
 
 //Export function
